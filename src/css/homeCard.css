@@ -1,0 +1,96 @@
+.home__card {
+
+    height: 700px;
+    width: 770px;
+    padding: 20px;
+    display: flex;
+    color: white !important;
+    flex-direction: column;
+    text-align: center;
+    object-fit: contain;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+
+}
+
+.home__card__title {
+    font-size: 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white !important;
+
+    font-weight: 800;
+
+}
+
+.home__card__description {
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+
+}
+
+sup {
+    font-size: 8px;
+}
+
+.home__card__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.learn:hover {
+    text-decoration: underline;
+
+}
+
+.learn,
+.try__free {
+    display: flex;
+    align-items: center;
+
+
+}
+
+span {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.span__icon {
+    position: relative;
+    left: -5px;
+    top: 5px;
+    font-size: 20px !important;
+    ;
+}
+
+@media screen and (max-width: 1024px){
+    .home__card{
+        height: 420px;
+        width: 360px;
+        object-fit: contain;
+        background-position : center;
+    }
+    .home__card__description{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,109 @@
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.dark{
+    background:  #000000;
+    margin-top: 10px;
+    
+}
+.white__text {
+    color: white;
+}
+
+
+.image__background {
+    height:400px !important;
+    width :100%;
+    object-fit: contain;
+    position: relative;
+    left: 0;
+    top: 2%;
+    background-position: center center;
+   
+    
+   
+}
+.airpods{
+    height:300px !important;
+}
+.home__grid{
+    height: 610px;
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". .";
+}
+.home__cards{
+    padding: 10px 20px;
+    height: 610px;
+   display: flex;
+   justify-content: space-around;
+   gap: 10px;
+   margin : auto;
+}
+.bottom{
+    position: relative;
+    top: 28%;
+    
+}
+.top{
+    position: relative;
+    top: -160px; 
+}
+
+.home__footer{
+   
+    height:500px;
+    background : #F5F5F7;
+    margin: 50px 0 0 0;
+   
+    color: grey;
+   
+}
+
+.home__footer__content{
+    width : 70%;
+    margin: auto;
+}
+.home__footer__text{
+  
+    font-family: 'Poppins' ,sans-serif;
+    border-bottom: 1px solid rgb(204, 201, 201);
+    padding : 10px 0;
+    
+   
+  
+}
+.home__footer__text > p {
+    padding: 4px 0;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width:1024px){
+   .image__background {
+       
+       overflow: hidden;
+       object-fit: contain;
+       background-position: top center;
+       height: 100%;
+       top: 4%;
+       
+   }
+   .home__grid ,.home__cards{
+       height : 100%;;
+       display: flex;
+       flex-direction: column;
+   }
+   .top{
+       top: -130px;
+   }
+   .home__footer__content{
+       width : 90%;
+       margin: 0 auto;
+   }
+}
