@@ -35,9 +35,9 @@ function MobileHeader() {
         <div className="mobile__menu__icon" onClick={handleIsclicked}>
           {isClicked ? <AiOutlineClose /> : <HiMenuAlt4 />}
         </div>
-        <Link onClick = {handleIsclicked} to="/">
+        <Link onClick = { isClicked &&(handleIsclicked)} to="/">
           <div className="mobile__header__icon">
-            <AiFillApple />
+            <AiFillApple  />
           </div>
         </Link>
       </div>
