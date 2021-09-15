@@ -1,0 +1,96 @@
+.card {
+  width: 100%;
+  height: 100%;
+  background : #F5F5F7;
+
+  padding: 20px;
+  margin-bottom: 150px;
+}
+.card__container {
+  max-width: 1500px;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+.card__top {
+  display: grid;
+  place-items: center;
+}
+.heading {
+  display: flex;
+  align-items: center;
+}
+.heading > span {
+  font-size: 3rem;
+  margin-top: 20px;
+  color: #001;
+}
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.sub_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -20px;
+  margin-left: 60px;
+  color: rgb(209, 21, 21);
+  text-transform: uppercase;
+}
+.info {
+  font-size: 1.5rem;
+  width: 60%;
+  text-align: center;
+  font-weight: 600;
+  padding: 20px;
+}
+.grey {
+  color: grey;
+  font-weight: 400;
+  padding: 20px;
+}
+button {
+  padding: 8px;
+  width: 150px;
+  flex-grow: 1;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgb(14, 13, 13);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover {
+  background: rgb(20, 20, 20);
+  color: white;
+  transition: all 0.2s ease-in;
+}
+.card__bottom {
+  width: 100%;
+
+  background-image: url(../images/watch.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    margin-bottom: 0px;
+  }
+  .card__bottom {
+    height: 300px;
+    flex-grow: 1;
+    background-size: 100%;
+  }
+  .info {
+    width: 100%;
+  }
+}

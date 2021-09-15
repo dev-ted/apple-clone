@@ -4,12 +4,31 @@
 }
 
 .dark{
-    background:  #000000;
+    background:  #34283C;
     margin-top: 10px;
     
 }
+.gray{
+    background:  #f5f3f3;
+}
 .white__text {
     color: white;
+}
+.bg-white{
+    background: white;
+}
+.border-white{
+    border: 2px solid white;
+}
+.bt-white{
+   
+    color: white;
+    border: 2px solid white !important;
+    
+}
+.bt-white:hover{
+    color: #001 !important;
+    background: #fff !important;
 }
 
 
@@ -29,13 +48,15 @@
     height:300px !important;
 }
 .home__grid{
-    height: 610px;
+    height: 100%;
+    padding: 20px;
+   
+    width: 100%;
     display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    ". .";
+    place-items: center;
+    margin: 0 auto;
+   
+  
 }
 .home__cards{
     padding: 10px 20px;

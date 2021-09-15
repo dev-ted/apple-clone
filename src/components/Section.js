@@ -1,36 +1,43 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../css/section.css";
-import { BiChevronRight } from "react-icons/bi";
 
-function Section({ title, subtitle, color, small,icon ,image, link ,background ,imageBackground }) {
+import "../css/section.css";
+
+function Section({
+  title,
+  subtitle,
+  reverse,
+  color,
+  button,
+  cta_1,
+  cta_2,
+ 
+  image,
+ 
+  background,
+  imageBackground,
+}) {
   return (
     <div className={`section ${background}`}>
-      <div className="section__top">
-        <Link to={link}>
-          <h1 className={`section__title ${color}`}>{icon}{title}</h1>
-        </Link>
+      <div className={reverse ? `reverse ${color}` : `section__container ${color}`}>
+        <div className="section__top">
+          <h1 className="section__title">{title}</h1>
 
-        <small className="section__small">{small}</small>
-        <h4 className={`section__subtitle ${color}`}>{subtitle}</h4>
-        <Link to={link}>
-          <div className="learn__more">
-            <p>Learn more </p>
-            <BiChevronRight className="icon" />
+          <h5 className="subtitle">{subtitle}</h5>
+          <div className="cta__butons">
+            <button className ={`${button} `}>{cta_1} </button>
+
+            <button className ={`${button} `}>{cta_2} </button>
           </div>
-        </Link>
-      </div>
+        </div>
 
-      <div
-        className={`section__bottom ${imageBackground}`}
-        style={{
-          backgroundImage: `url(${image}) `,
-        }}
-      >
-        {/* <img className="section__image"
-            src="https://www.citypng.com/public/uploads/preview/-21602679419e0tlovek0t.png"
-            alt=""
-          /> */}
+        <div
+          className={`section__bottom`}
+          style={{
+            backgroundImage: `url(${image}) `,
+          }}
+        >
+        
+        </div>
       </div>
     </div>
   );
